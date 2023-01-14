@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#033E45"
+    android:orientation="vertical"
+    tools:context=".Loginpage">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coding"
+        android:textSize="@dimen/_45ssp"
+        android:textStyle="italic|bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_150sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz App"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:backgroundTint="@color/black"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_contacts_24"
+        android:drawableTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_password_24"
+        android:drawableTint="@color/white"
+        android:hint="Password"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="@color/teal_200"
+        android:textSize="@dimen/_15ssp" />
+
+</LinearLayout>

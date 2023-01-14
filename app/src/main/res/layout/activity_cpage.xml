@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E676"
+    tools:context=".c.CPage">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:text="Your Score"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/textscore"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:text="0"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:elevation="10.0dp"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:contentPadding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/text_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_15ssp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_250sdp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/radio_group">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:text="C Language"
+                android:checked="false"
+                android:textSize="@dimen/_15sdp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton1"
+                android:text="C++ "
+                android:checked="false"
+                android:textSize="@dimen/_15sdp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:text="JavaScript"
+                android:checked="false"
+                android:textSize="@dimen/_15sdp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:text="Python"
+                android:checked="false"
+                android:textSize="@dimen/_15sdp"
+                />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:textSize="@dimen/_15ssp"
+        android:elevation="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="@dimen/_450sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_50sdp"/>
+
+</RelativeLayout>
